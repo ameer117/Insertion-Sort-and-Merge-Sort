@@ -1,0 +1,67 @@
+Script started on Wed 23 Jan 2019 08:38:33 PM PST
+]0;aahussai@laguna:~/hw1[aahussai@laguna ~/hw1]$ l[Kmake insertion-sort.[K
+g++  -O3 -g -o driver.o -c driver.cc
+g++  -O3 -g -o sort.o -c sort.cc
+g++  -O3 -g -o insertion-sort.o -c insertion-sort.cc
+g++ -O3 -g -o insertion-sort driver.o sort.o insertion-sort.o
+]0;aahussai@laguna:~/hw1[aahussai@laguna ~/hw1]$ ./insertion-sort 100
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 100
+
+Quicksort: 9e-06 seconds ==> 11.1111 million keys per second
+	(Array is sorted.)
+My sort: 4e-06 seconds ==> 25 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;aahussai@laguna:~/hw1[aahussai@laguna ~/hw1]$ make [K[K[K[K.[K./insertion-sr[Kort 1000
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 1000
+
+Quicksort: 0.000203 seconds ==> 4.92611 million keys per second
+	(Array is sorted.)
+My sort: 0.000151 seconds ==> 6.62252 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;aahussai@laguna:~/hw1[aahussai@laguna ~/hw1]$ make clean
+rm -f core *.o *~ insertion-sort mergesort
+]0;aahussai@laguna:~/hw1[aahussai@laguna ~/hw1]$ make mergesort
+g++  -O3 -g -o driver.o -c driver.cc
+g++  -O3 -g -o sort.o -c sort.cc
+g++  -O3 -g -o mergesort.o -c mergesort.cc
+g++ -O3 -g -o mergesort driver.o sort.o mergesort.o
+]0;aahussai@laguna:~/hw1[aahussai@laguna ~/hw1]$ ./mergesort 100
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 100
+
+Quicksort: 1e-05 seconds ==> 10 million keys per second
+	(Array is sorted.)
+My sort: 7e-06 seconds ==> 14.2857 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;aahussai@laguna:~/hw1[aahussai@laguna ~/hw1]$ ./mergesort 1000
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 1000
+
+Quicksort: 0.000176 seconds ==> 5.68182 million keys per second
+	(Array is sorted.)
+My sort: 6.3e-05 seconds ==> 15.873 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;aahussai@laguna:~/hw1[aahussai@laguna ~/hw1]$ make clean
+rm -f core *.o *~ insertion-sort mergesort
+]0;aahussai@laguna:~/hw1[aahussai@laguna ~/hw1]$ exit
+exit
+
+Script done on Wed 23 Jan 2019 08:39:21 PM PST
